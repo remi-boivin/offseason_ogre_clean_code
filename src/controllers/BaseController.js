@@ -44,7 +44,6 @@ module.exports = class BaseController {
         const UpdateEntityQuery = new this.UpdateBaseCase(this.baseRepository);
 
         UpdateEntityQuery.Execute(req.params.id, req.body, this.Entity).then((entity) => {
-            // res.status(200).json(entity)
             entity ? res.status(200).json(entity) : res.status(404).json({ message: 'The entity was not found' });
         }, (err) => {
             next(err);

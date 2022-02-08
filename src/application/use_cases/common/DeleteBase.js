@@ -7,7 +7,7 @@ module.exports = class DeleteBaseCase {
 
         const entity = await this.BaseRepository.getById(id);
         if (!entity) {
-            throw new Error('The entity was not found');
+            throw new Error('The entity not exist in the system');
         }
         // delete base
         await this.BaseRepository.delete(id, entity);

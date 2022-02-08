@@ -2,7 +2,11 @@
 module.exports = class DatabaseServices {
 
     constructor() {
+<<<<<<< HEAD
         this.userRepository = null;
+=======
+        this.playerRepository = null;
+>>>>>>> dd1fbea (Initial commit)
     }
 
     initDatabase() {

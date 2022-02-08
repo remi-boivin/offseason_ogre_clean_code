@@ -9,7 +9,7 @@ module.exports = class UpdateBaseCase {
         id = parseInt(id)
 
         if (!entitySearched) {
-            throw new Error('The entity was not found');
+            throw new Error('The entity not exist in the system');
         }
         const entityUpdated = new Entity(params);
         entityUpdated.id = id;
