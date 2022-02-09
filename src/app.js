@@ -4,10 +4,6 @@ const routes = require('./frameworks/web/routes');
 const projectDependencies = require('./config/projectDependencies');
 const ErrorHandler = require('./frameworks/common/ErrorHandler');
 const logger = require('./frameworks/common/logger');
-<<<<<<< HEAD
-// const createHttpTerminator = require('http-terminator');
-=======
->>>>>>> dd1fbea (Initial commit)
 
 const app = express();
 const port = process.env.PORT || 3000;
